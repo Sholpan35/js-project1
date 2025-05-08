@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="project.css">
+<body>
+<div class="side-cart" id="side-cart">
+  <div class="side-cart-header">
+    <h3>Корзина</h3>
+    <span id="close-cart">&times;</span>
+  </div>
+
+  <ul id="cart-items">
+  </ul>
+  <p><strong>Итого:</strong> <span id="cart-total">0</span>〒</p>
+  <button id="clear-cart" class="clear-cart-btn">Очистить корзину</button>
+</div>
+  <div class="discount"> 
+ <p>Discount 20% for this product! Check out now!</p>
+  </div>
+  <div class="name">
+    <h1>Tokojo</h1>
+    <div class="nav">
+    <a href="">20% off</a>
+    <a href="">New release</a>
+    <a href="">Fragranse</a>
+    <a href="">Haircare</a>
+    <a href="">Skincare</a>
+    <a href="">Blogs</a>
+  </div>
+  <div class="icon">
+    <ion-icon name="search-outline"></ion-icon>
+    <ion-icon name="bag-add-outline"></ion-icon>
+    <a href="loginpage.html"><ion-icon name="person-outline"></ion-icon></a>
+  </div>
+  </div>
+  <div class="img">
+    <img src="https://i.pinimg.com/736x/f9/c5/e1/f9c5e1b6b90a8c3a682384827b61196b.jpg" alt="">
+    <img src="https://i.pinimg.com/736x/4c/82/a5/4c82a57ca2b11f125020d85166a48182.jpg" alt="">
+ <img src="https://i.pinimg.com/736x/75/20/8a/75208ae3f3572e52d7db2af10c566fd4.jpg" alt="">
+  </div>
+  <div class="New">
+    <h1><b>New Arrival Collection</b></h1>
+    <p>Your Beauty Journey Begins into Our Collections,Where Beauty Knowns No Boundaries and Possibilites Are Endless</p>
+  </div>
+  <div class="offers">
+   <div class="offer">
+    <img src="https://i.pinimg.com/736x/09/0e/fa/090efab550941d38bcfa8c0dad0d33cd.jpg" alt="">
+    <p>Haircare</p>
+    <h2>Nolani Hair Balm</h2>
+    <p><b>20,000〒</b></p>
+    <button onclick="addToCart('Nolani Hair Balm', 20000)">🛒</button>
+   </div>
+   <div class="offer">
+    <img src="https://i.pinimg.com/736x/25/aa/81/25aa813cbcd027c11578535bdef2650c.jpg" alt="">
+    <p>Skincare</p>
+    <h2>Sadie Serum</h2>
+    <p><b>8000〒</b></p>
+    <button onclick="addToCart('Sadie Serum', 8000)">🛒</button>
+   </div>
+   <div class="offer">
+    <img src="https://i.pinimg.com/736x/39/95/44/3995449948bad1eb33d9c1342b64968a.jpg" alt="">
+    <p>Bodycare</p>
+    <h2>Oil for cuticle</h2>
+    <p><b>10,000〒</b></p>
+    <button onclick="addToCart('Oil for cuticle', 10000)">🛒</button>
+   </div>
+   <div class="offer">
+    <img src="https://i.pinimg.com/736x/13/79/99/137999899ecd4568a14bbdc25f4cc396.jpg" alt="">
+    <p>Skincare</p>
+    <h2>spf for skin</h2>
+    <p><b>10,000〒</b></p>
+    <button onclick="addToCart('spf for skin', 10000)">🛒</button>
+   </div>
+   <div class="offer">
+    <img src="https://i.pinimg.com/736x/e3/6e/05/e36e055fa55d63697a6112a27e56c7f0.jpg" alt="">
+    <p>Bodycare</p>
+    <h2>Aromatic body oil</h2>
+    <p><b>7000〒</b></p>
+    <button onclick="addToCart('Aromatic body oil', 7000)">🛒</button>
+   </div>
+   <div class="offer">
+    <img src="https://i.pinimg.com/736x/a9/76/ae/a976aee65def9ea16872ab9e7b9fa34d.jpg" alt="">
+    <p>Bodycare</p>
+    <h2>brown sugar </h2>
+    <p><b>5000〒</b></p>
+    <button onclick="addToCart('brown sugar ', 5000)">🛒</button>
+   </div>
+   <div class="offer">
+   <img src="https://i.pinimg.com/736x/57/f8/6b/57f86bd3f019b7fff705f6c0fdcab877.jpg" alt="">
+   <p>Skincare</p>
+   <h2>Glow Ampoule</h2>
+   <p><b>9000〒</b></p>
+   <button onclick="addToCart('Glow Ampoule', 9000)">🛒</button>
+   </div>
+   <div class="offer">
+    <img src="https://i.pinimg.com/736x/46/7b/ec/467becfdbb12783444deacc5d8adb983.jpg" alt="">
+    <p>Skincare</p>
+    <h2>Indulging cream</h2>
+    <p><b>15,000〒</b></p>
+    <button onclick="addToCart('Indulging cream', 15000)">🛒</button>
+    </div>
+    <div class="offer">
+      <img src="https://i.pinimg.com/736x/bf/b2/15/bfb2154f0173a6d4499896d1a56b19d0.jpg" alt="">
+      <p>Haircare</p>
+      <h2>Set for haircare</h2>
+      <p><b>30,000〒</b></p>
+      <button onclick="addToCart('Set for haircare', 30000)">🛒</button>
+      </div>
+      <div class="offer">
+        <img src="https://i.pinimg.com/736x/4a/f9/e1/4af9e129cb61732845c7f9da3bca91ba.jpg" alt="">
+        <p>Haircare</p>
+        <h2>Hairbrush</h2>
+        <p><b>6000〒</b></p>
+        <button onclick="addToCart('Hairbrush', 6000)">🛒</button>
+        </div>
+        <div class="offer">
+          <img src="https://i.pinimg.com/736x/99/2b/ba/992bba21967b481cab05ebd99ace43f7.jpg" alt="">
+          <p>Lipstick</p>
+          <h2>Butterstick</h2>
+          <p><b>20,000〒</b></p>
+          <button onclick="addToCart('Butterstick', 20000)">🛒</button>
+          </div>
+          <div class="offer">
+            <img src="https://i.pinimg.com/736x/83/59/b8/8359b80f53c9d960eb30fc9a0092ea9b.jpg" alt="">
+            <p>Skincare</p>
+            <h2>Cheek contour</h2>
+            <p><b>15,000〒</b></p>
+            <button onclick="addToCart('Cheek contour', 15000)">🛒</button>
+            </div>
+              <div class="hidden"> 
+                <img src="https://i.pinimg.com/736x/bc/69/a7/bc69a782192e77800f13d9c1cebf79cf.jpg" alt="">
+                <p>cosmetics</p>
+                <h2>eyelash</h2>
+                <p><b>35,000〒</b></p>
+                <button onclick="addToCart('eyelash', 35000)">🛒</button>
+              </div>
+              <div class="hidden">
+                <img src="https://i.pinimg.com/736x/93/7c/ef/937cef586347fe9663f1e3fd49df73d4.jpg" alt="">
+                <p>cosmetics</p>
+                <h2>eyelainer</h2>
+                <p><b>20,000〒</b></p>
+                <button onclick="addToCart('eyelainer', 20000)">🛒</button>
+              </div>
+              <div class="hidden"> 
+                <img src="https://i.pinimg.com/736x/28/02/db/2802db7b835b60ba5c5b1098d19b7e6c.jpg" alt="">
+                <p>cosmetics</p>
+                <h2>Lipstick</h2>
+                <p><b>43,000〒</b></p>
+                <button onclick="addToCart('Lipstick', 43000)">🛒</button>
+              </div>
+              <div class="hidden"> 
+                <img src="https://i.pinimg.com/736x/53/29/53/5329532021edadeb31a1ef59d7b6ab68.jpg" alt="">
+                <p>cosmetics</p>
+                <h2> highlighter</h2>
+                <p><b>27,000〒</b></p>
+                <button onclick="addToCart('highlighter', 27000)">🛒</button>
+              </div>
+              <div class="hidden"> 
+                <img src="https://i.pinimg.com/736x/78/63/be/7863be92f9cd70338d875c0c3e2d8855.jpg" alt="">
+                <p>cosmetics</p>
+                <h2>sponge</h2>
+                <p><b>7000〒</b></p>
+                <button onclick="addToCart('sponge', 7000)">🛒</button>
+              </div>
+              <div class="hidden"> 
+                <img src="https://i.pinimg.com/736x/0b/7c/6b/0b7c6b7b2748b1d25e81940e0e070be0.jpg" alt="">
+                <p>cosmetics</p>
+                <h2>kiko</h2>
+                <p><b>9000〒</b></p>
+                <button onclick="addToCart('kiko', 9000)">🛒</button>
+              </div>
+  </div>
+  <div class="more" id="mood"><p>Load More Collection</p></div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h2>Tokojo</h2>
+        <p>Your trusted source for skincare & beauty.</p>
+      </div>
+      <div class=" links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Tokojo. All rights reserved.</p>
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="project.js"></script>
+</body>
+</html>
